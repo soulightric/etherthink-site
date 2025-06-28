@@ -3,7 +3,7 @@ services:
     name: etherthink
     env: python
     buildCommand: ""
-    startCommand: "gunicorn run:app"
+    startCommand: "gunicorn main:app"
     envVars:
       - key: FLASK_ENV
         value: production
