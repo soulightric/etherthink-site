@@ -24,8 +24,8 @@ body {
 }
   
 .nav-left img {
-    height: 32px;
-    width: 32px;
+    height: 50px;
+    width: 50px;
 }
   
 .nav-left .brand {
@@ -70,12 +70,18 @@ body {
 /* Hero */
 .hero {
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
     min-height: 80vh;
     background-color: #f9f9f9;
-    padding: 40px 20px;
+    padding: 40px 50px;
+  }
+
+  .hero img {
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    border-radius: 50%;
   }
   
   .hero-content {
@@ -105,4 +111,4 @@ body {
     .hero p {
       font-size: 1rem;
     }
-  }  
+  }
