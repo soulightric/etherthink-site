@@ -6,6 +6,7 @@
     <title>Etherthink</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/Etherthink.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -15,9 +16,26 @@
       </div>
       <div class="nav-right">
         <a href="#">Sejarah</a>
-        <a href="https://www.youtube.com/@Etherthink">Youtube</a>
       </div>
     </nav>
     {% block content %}{% endblock %}
+    <footer class="footer">
+      <p>&copy; Hak Cipta 2024 - {{ now.year }} Etherthink.  All Rights Reserved.</p>
+      <div class="footer-icons">
+        <a href="https://www.youtube.com/@etherthink" target="_blank" title="Youtube">
+          <i class="fab fa-youtube"></i>
+        <a href="https://www.instagram.com/etherthink/" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        <a href="https://www.x.com/Etherthink" target="_blank" title="X (Formerly Twitter)">
+          <i class="fab fa-x-twitter"></i>
+        <a href="https://www.reddit.com/u/Etherthink" target="_blank" title="Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+        <a href="mailto:etherthink@example.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
