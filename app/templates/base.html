@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etherthink</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="{{ url_for('static', filename='img/favicon.ico') }}" alt="Logo Etherthink">
+        <span class="brand">Etherthink</span>
+      </div>
+      <div class="nav-right">
+        <a href="#">Sejarah</a>
+        <a href="#">Konten</a>
+      </div>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
