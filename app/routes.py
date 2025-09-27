@@ -10,3 +10,8 @@ def index():
 @main.route('/dash')
 def index():
     return render_template('dash.html')
+
+@main.route('/login')
+def index():
+    return render_template('login.html')
+
